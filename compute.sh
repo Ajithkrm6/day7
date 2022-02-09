@@ -9,3 +9,11 @@ uc4=$(($(($c+$a))/$b))
 echo "$uc4"
 uc5=$(($(($a%$b))+$c))
 echo "$uc5"
+
+declare -A dict
+dict[uc2]="$uc2"
+dict[uc3]="$uc3"
+dict[uc4]="$uc4"
+dict[uc5]="$uc5"
+echo ${dict[@]}
+
